@@ -1,0 +1,877 @@
+{
+  "metadata": {
+    "date": "2026-01-20T20:14:08.157108",
+    "backend": "ibm_fez",
+    "n": 88,
+    "k": 28,
+    "shots": 8192,
+    "n_bootstrap": 100
+  },
+  "scores": {
+    "greedy": 44.41895851235253,
+    "sa": 41.95585198111842,
+    "qaoa_raw": 43.035563778227,
+    "qaoa_zne": 58.723900051600786
+  },
+  "municipalities": {
+    "greedy": [
+      "Município_0",
+      "Município_2",
+      "Município_3",
+      "Município_5",
+      "Município_12",
+      "Município_21",
+      "Município_14",
+      "Município_25",
+      "Município_7",
+      "Município_28",
+      "Município_49",
+      "Município_30",
+      "Município_46",
+      "Município_34",
+      "Município_57",
+      "Município_42",
+      "Município_54",
+      "Município_40",
+      "Município_63",
+      "Município_51",
+      "Município_38",
+      "Município_86",
+      "Município_64",
+      "Município_77",
+      "Município_85",
+      "Município_68",
+      "Município_84",
+      "Município_76"
+    ],
+    "sa": [
+      "Município_2",
+      "Município_4",
+      "Município_5",
+      "Município_12",
+      "Município_21",
+      "Município_9",
+      "Município_14",
+      "Município_26",
+      "Município_25",
+      "Município_52",
+      "Município_30",
+      "Município_44",
+      "Município_46",
+      "Município_33",
+      "Município_57",
+      "Município_42",
+      "Município_54",
+      "Município_40",
+      "Município_63",
+      "Município_51",
+      "Município_38",
+      "Município_86",
+      "Município_64",
+      "Município_77",
+      "Município_85",
+      "Município_68",
+      "Município_84",
+      "Município_76"
+    ],
+    "qaoa_raw": [
+      "Município_2",
+      "Município_3",
+      "Município_5",
+      "Município_12",
+      "Município_21",
+      "Município_14",
+      "Município_25",
+      "Município_7",
+      "Município_28",
+      "Município_49",
+      "Município_30",
+      "Município_46",
+      "Município_34",
+      "Município_57",
+      "Município_42",
+      "Município_54",
+      "Município_40",
+      "Município_63",
+      "Município_51",
+      "Município_38",
+      "Município_75",
+      "Município_86",
+      "Município_64",
+      "Município_77",
+      "Município_85",
+      "Município_68",
+      "Município_84",
+      "Município_76"
+    ]
+  },
+  "municipality_details": {
+    "greedy": [
+      {
+        "index": 0,
+        "nome": "Município_0",
+        "carbon_score": 1.0,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 1.0,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 2,
+        "nome": "Município_2",
+        "carbon_score": 0.7245570158559324,
+        "biodiversity_score": 0.5,
+        "social_score": 0.4791309921547289,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 3,
+        "nome": "Município_3",
+        "carbon_score": 0.6832073628557791,
+        "biodiversity_score": 0.3015113445777636,
+        "social_score": 0.6913251585104372,
+        "bioma": "Transicao_Amazonia"
+      },
+      {
+        "index": 5,
+        "nome": "Município_5",
+        "carbon_score": 0.5462042647793972,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.7961019321076083,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 12,
+        "nome": "Município_12",
+        "carbon_score": 0.4862700492946952,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4902895675241516,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 21,
+        "nome": "Município_21",
+        "carbon_score": 0.4204883375210219,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.2949062367211183,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 14,
+        "nome": "Município_14",
+        "carbon_score": 0.3101700574139928,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.571962453673586,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 25,
+        "nome": "Município_25",
+        "carbon_score": 0.2141999961406029,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4293210011792933,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 7,
+        "nome": "Município_7",
+        "carbon_score": 0.1212943689576314,
+        "biodiversity_score": 1.0,
+        "social_score": 0.4782519910069667,
+        "bioma": "Transicao_Atlantica"
+      },
+      {
+        "index": 28,
+        "nome": "Município_28",
+        "carbon_score": 0.005300174164395,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.6525639404113414,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 49,
+        "nome": "Município_49",
+        "carbon_score": -0.0072638233317301,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.3438103623178054,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 30,
+        "nome": "Município_30",
+        "carbon_score": -0.0174313775990399,
+        "biodiversity_score": 0.3015113445777636,
+        "social_score": 0.5318300202918147,
+        "bioma": "Transicao_Amazonia"
+      },
+      {
+        "index": 46,
+        "nome": "Município_46",
+        "carbon_score": -0.0520446157223826,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4445232391801787,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 34,
+        "nome": "Município_34",
+        "carbon_score": -0.0725973250737381,
+        "biodiversity_score": 0.3015113445777636,
+        "social_score": 0.5645771915392621,
+        "bioma": "Transicao_Amazonia"
+      },
+      {
+        "index": 57,
+        "nome": "Município_57",
+        "carbon_score": -0.0973476475700544,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.3602463994947172,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 42,
+        "nome": "Município_42",
+        "carbon_score": -0.1451622093664654,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.6397340105386933,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 54,
+        "nome": "Município_54",
+        "carbon_score": -0.1829334366875013,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4876553324677539,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 40,
+        "nome": "Município_40",
+        "carbon_score": -0.2637519783961147,
+        "biodiversity_score": 0.5,
+        "social_score": 0.4838097791172192,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 63,
+        "nome": "Município_63",
+        "carbon_score": -0.2697974690365306,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.5175174034089911,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 51,
+        "nome": "Município_51",
+        "carbon_score": -0.2791528295752151,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.6543447234999001,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 38,
+        "nome": "Município_38",
+        "carbon_score": -0.3192002091356298,
+        "biodiversity_score": 0.5,
+        "social_score": 0.6085807450037337,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 86,
+        "nome": "Município_86",
+        "carbon_score": -0.3779857078516521,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.353840372683242,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 64,
+        "nome": "Município_64",
+        "carbon_score": -0.4491359501744557,
+        "biodiversity_score": 0.5,
+        "social_score": 0.4340220283259823,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 77,
+        "nome": "Município_77",
+        "carbon_score": -0.4925331225471438,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.6429296420552623,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 85,
+        "nome": "Município_85",
+        "carbon_score": -0.4966622404965078,
+        "biodiversity_score": 0.3015113445777636,
+        "social_score": 0.3950760830366169,
+        "bioma": "Transicao_Amazonia"
+      },
+      {
+        "index": 68,
+        "nome": "Município_68",
+        "carbon_score": -0.6358570027849555,
+        "biodiversity_score": 0.5,
+        "social_score": 0.6354306473830394,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 84,
+        "nome": "Município_84",
+        "carbon_score": -0.7221351349678486,
+        "biodiversity_score": 0.5,
+        "social_score": 0.5210746752389962,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 76,
+        "nome": "Município_76",
+        "carbon_score": -0.8716063793648962,
+        "biodiversity_score": 1.0,
+        "social_score": 0.3278045122852241,
+        "bioma": "Transicao_Atlantica"
+      }
+    ],
+    "sa": [
+      {
+        "index": 2,
+        "nome": "Município_2",
+        "carbon_score": 0.7245570158559324,
+        "biodiversity_score": 0.5,
+        "social_score": 0.4791309921547289,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 4,
+        "nome": "Município_4",
+        "carbon_score": 0.6094689214769258,
+        "biodiversity_score": 0.5,
+        "social_score": 0.578072015246459,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 5,
+        "nome": "Município_5",
+        "carbon_score": 0.5462042647793972,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.7961019321076083,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 12,
+        "nome": "Município_12",
+        "carbon_score": 0.4862700492946952,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4902895675241516,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 21,
+        "nome": "Município_21",
+        "carbon_score": 0.4204883375210219,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.2949062367211183,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 9,
+        "nome": "Município_9",
+        "carbon_score": 0.3204176668633988,
+        "biodiversity_score": 0.5,
+        "social_score": 0.5603077350392883,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 14,
+        "nome": "Município_14",
+        "carbon_score": 0.3101700574139928,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.571962453673586,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 26,
+        "nome": "Município_26",
+        "carbon_score": 0.2454670471206895,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.3754436803245963,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 25,
+        "nome": "Município_25",
+        "carbon_score": 0.2141999961406029,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4293210011792933,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 52,
+        "nome": "Município_52",
+        "carbon_score": 0.0124422626461701,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.254571705042201,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 30,
+        "nome": "Município_30",
+        "carbon_score": -0.0174313775990399,
+        "biodiversity_score": 0.3015113445777636,
+        "social_score": 0.5318300202918147,
+        "bioma": "Transicao_Amazonia"
+      },
+      {
+        "index": 44,
+        "nome": "Município_44",
+        "carbon_score": -0.0320923179611606,
+        "biodiversity_score": 0.3015113445777636,
+        "social_score": 0.3192069660769846,
+        "bioma": "Transicao_Amazonia"
+      },
+      {
+        "index": 46,
+        "nome": "Município_46",
+        "carbon_score": -0.0520446157223826,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4445232391801787,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 33,
+        "nome": "Município_33",
+        "carbon_score": -0.0570603209197889,
+        "biodiversity_score": 0.3015113445777636,
+        "social_score": 0.5558106521639599,
+        "bioma": "Transicao_Amazonia"
+      },
+      {
+        "index": 57,
+        "nome": "Município_57",
+        "carbon_score": -0.0973476475700544,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.3602463994947172,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 42,
+        "nome": "Município_42",
+        "carbon_score": -0.1451622093664654,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.6397340105386933,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 54,
+        "nome": "Município_54",
+        "carbon_score": -0.1829334366875013,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4876553324677539,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 40,
+        "nome": "Município_40",
+        "carbon_score": -0.2637519783961147,
+        "biodiversity_score": 0.5,
+        "social_score": 0.4838097791172192,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 63,
+        "nome": "Município_63",
+        "carbon_score": -0.2697974690365306,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.5175174034089911,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 51,
+        "nome": "Município_51",
+        "carbon_score": -0.2791528295752151,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.6543447234999001,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 38,
+        "nome": "Município_38",
+        "carbon_score": -0.3192002091356298,
+        "biodiversity_score": 0.5,
+        "social_score": 0.6085807450037337,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 86,
+        "nome": "Município_86",
+        "carbon_score": -0.3779857078516521,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.353840372683242,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 64,
+        "nome": "Município_64",
+        "carbon_score": -0.4491359501744557,
+        "biodiversity_score": 0.5,
+        "social_score": 0.4340220283259823,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 77,
+        "nome": "Município_77",
+        "carbon_score": -0.4925331225471438,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.6429296420552623,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 85,
+        "nome": "Município_85",
+        "carbon_score": -0.4966622404965078,
+        "biodiversity_score": 0.3015113445777636,
+        "social_score": 0.3950760830366169,
+        "bioma": "Transicao_Amazonia"
+      },
+      {
+        "index": 68,
+        "nome": "Município_68",
+        "carbon_score": -0.6358570027849555,
+        "biodiversity_score": 0.5,
+        "social_score": 0.6354306473830394,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 84,
+        "nome": "Município_84",
+        "carbon_score": -0.7221351349678486,
+        "biodiversity_score": 0.5,
+        "social_score": 0.5210746752389962,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 76,
+        "nome": "Município_76",
+        "carbon_score": -0.8716063793648962,
+        "biodiversity_score": 1.0,
+        "social_score": 0.3278045122852241,
+        "bioma": "Transicao_Atlantica"
+      }
+    ],
+    "qaoa_raw": [
+      {
+        "index": 2,
+        "nome": "Município_2",
+        "carbon_score": 0.7245570158559324,
+        "biodiversity_score": 0.5,
+        "social_score": 0.4791309921547289,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 3,
+        "nome": "Município_3",
+        "carbon_score": 0.6832073628557791,
+        "biodiversity_score": 0.3015113445777636,
+        "social_score": 0.6913251585104372,
+        "bioma": "Transicao_Amazonia"
+      },
+      {
+        "index": 5,
+        "nome": "Município_5",
+        "carbon_score": 0.5462042647793972,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.7961019321076083,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 12,
+        "nome": "Município_12",
+        "carbon_score": 0.4862700492946952,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4902895675241516,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 21,
+        "nome": "Município_21",
+        "carbon_score": 0.4204883375210219,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.2949062367211183,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 14,
+        "nome": "Município_14",
+        "carbon_score": 0.3101700574139928,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.571962453673586,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 25,
+        "nome": "Município_25",
+        "carbon_score": 0.2141999961406029,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4293210011792933,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 7,
+        "nome": "Município_7",
+        "carbon_score": 0.1212943689576314,
+        "biodiversity_score": 1.0,
+        "social_score": 0.4782519910069667,
+        "bioma": "Transicao_Atlantica"
+      },
+      {
+        "index": 28,
+        "nome": "Município_28",
+        "carbon_score": 0.005300174164395,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.6525639404113414,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 49,
+        "nome": "Município_49",
+        "carbon_score": -0.0072638233317301,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.3438103623178054,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 30,
+        "nome": "Município_30",
+        "carbon_score": -0.0174313775990399,
+        "biodiversity_score": 0.3015113445777636,
+        "social_score": 0.5318300202918147,
+        "bioma": "Transicao_Amazonia"
+      },
+      {
+        "index": 46,
+        "nome": "Município_46",
+        "carbon_score": -0.0520446157223826,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4445232391801787,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 34,
+        "nome": "Município_34",
+        "carbon_score": -0.0725973250737381,
+        "biodiversity_score": 0.3015113445777636,
+        "social_score": 0.5645771915392621,
+        "bioma": "Transicao_Amazonia"
+      },
+      {
+        "index": 57,
+        "nome": "Município_57",
+        "carbon_score": -0.0973476475700544,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.3602463994947172,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 42,
+        "nome": "Município_42",
+        "carbon_score": -0.1451622093664654,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.6397340105386933,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 54,
+        "nome": "Município_54",
+        "carbon_score": -0.1829334366875013,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4876553324677539,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 40,
+        "nome": "Município_40",
+        "carbon_score": -0.2637519783961147,
+        "biodiversity_score": 0.5,
+        "social_score": 0.4838097791172192,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 63,
+        "nome": "Município_63",
+        "carbon_score": -0.2697974690365306,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.5175174034089911,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 51,
+        "nome": "Município_51",
+        "carbon_score": -0.2791528295752151,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.6543447234999001,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 38,
+        "nome": "Município_38",
+        "carbon_score": -0.3192002091356298,
+        "biodiversity_score": 0.5,
+        "social_score": 0.6085807450037337,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 75,
+        "nome": "Município_75",
+        "carbon_score": -0.3544709112509798,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.4649431370214378,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 86,
+        "nome": "Município_86",
+        "carbon_score": -0.3779857078516521,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.353840372683242,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 64,
+        "nome": "Município_64",
+        "carbon_score": -0.4491359501744557,
+        "biodiversity_score": 0.5,
+        "social_score": 0.4340220283259823,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 77,
+        "nome": "Município_77",
+        "carbon_score": -0.4925331225471438,
+        "biodiversity_score": 0.1790287185098582,
+        "social_score": 0.6429296420552623,
+        "bioma": "Cerrado_denso"
+      },
+      {
+        "index": 85,
+        "nome": "Município_85",
+        "carbon_score": -0.4966622404965078,
+        "biodiversity_score": 0.3015113445777636,
+        "social_score": 0.3950760830366169,
+        "bioma": "Transicao_Amazonia"
+      },
+      {
+        "index": 68,
+        "nome": "Município_68",
+        "carbon_score": -0.6358570027849555,
+        "biodiversity_score": 0.5,
+        "social_score": 0.6354306473830394,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 84,
+        "nome": "Município_84",
+        "carbon_score": -0.7221351349678486,
+        "biodiversity_score": 0.5,
+        "social_score": 0.5210746752389962,
+        "bioma": "Cerrado_típico"
+      },
+      {
+        "index": 76,
+        "nome": "Município_76",
+        "carbon_score": -0.8716063793648962,
+        "biodiversity_score": 1.0,
+        "social_score": 0.3278045122852241,
+        "bioma": "Transicao_Atlantica"
+      }
+    ]
+  },
+  "overlaps": {
+    "greedy_vs_sa": {
+      "common": 22,
+      "only_in_1": 6,
+      "only_in_2": 6,
+      "jaccard": 0.6470588235294118,
+      "pct_overlap": 78.57142857142857
+    },
+    "greedy_vs_qaoa": {
+      "common": 27,
+      "only_in_1": 1,
+      "only_in_2": 1,
+      "jaccard": 0.9310344827586207,
+      "pct_overlap": 96.42857142857143
+    },
+    "sa_vs_qaoa": {
+      "common": 22,
+      "only_in_1": 6,
+      "only_in_2": 6,
+      "jaccard": 0.6470588235294118,
+      "pct_overlap": 78.57142857142857
+    }
+  },
+  "zne_extrapolation": {
+    "linear": {
+      "value": 48.48402588012358,
+      "r2": 0.9301560252238397,
+      "status": "Robust Regression"
+    },
+    "quadratic": {
+      "value": 58.723900051600786,
+      "r2": "N/A (Exact Fit)",
+      "status": "Exact Interpolation"
+    },
+    "richardson": {
+      "value": 58.723900051600765,
+      "r2": "-",
+      "status": "Algebraic Mitigation"
+    }
+  },
+  "bootstrap_confidence": {
+    "linear": {
+      "mean": 48.355784566296755,
+      "std": 0.607440937297927,
+      "ci_lower": 47.14057984046131,
+      "ci_upper": 49.44129311319584
+    },
+    "quadratic": {
+      "mean": 58.18363269017703,
+      "std": 1.3983846972333334,
+      "ci_lower": 55.56374889525629,
+      "ci_upper": 60.46058859282483
+    },
+    "richardson": {
+      "mean": 45.99352153997389,
+      "std": 0.5306688468304274,
+      "ci_lower": 44.898323880963936,
+      "ci_upper": 46.42763252636283
+    }
+  },
+  "qaoa_statistics": {
+    "valid_pct": 15.2099609375,
+    "unique_valid": 1246,
+    "mean_score": 32.9422593888358,
+    "std_score": 3.4435659474823397
+  },
+  "noise_scaling": [
+    {
+      "noise_factor": 1,
+      "depth": 258,
+      "best_score": 43.035563778227,
+      "mean_score": 32.9422593888358,
+      "valid_pct": 15.2099609375
+    },
+    {
+      "noise_factor": 2,
+      "depth": 657,
+      "best_score": 33.491151985107834,
+      "mean_score": 24.136513182980412,
+      "valid_pct": 11.75537109375
+    },
+    {
+      "noise_factor": 3,
+      "depth": 617,
+      "best_score": 30.09066467224328,
+      "mean_score": 22.364450753916547,
+      "valid_pct": 7.9345703125
+    }
+  ]
+}
