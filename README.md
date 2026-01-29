@@ -1,6 +1,6 @@
 # QAOA with Zero Noise Extrapolation for Carbon Credit Portfolio Optimization
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PENDING.svg)](https://doi.org/10.5281/zenodo.PENDING)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18418054.svg)](https://doi.org/10.5281/zenodo.18418054)
 [![arXiv](https://img.shields.io/badge/arXiv-PENDING-b31b1b.svg)](https://arxiv.org/abs/PENDING)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Quantum Journal](https://img.shields.io/badge/Quantum-Submitted-blue.svg)](https://quantum-journal.org)
@@ -133,7 +133,7 @@ If you use this code or data, please cite:
 }
 ```
 
-**DOI:** 10.5281/zenodo.PENDING (Zenodo archive)
+**DOI:** 10.5281/zenodo.18418054 (Zenodo archive)
 
 ---
 
