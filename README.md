@@ -46,7 +46,6 @@ python code/qaoa_implementation.py
 ├── code/              # QAOA implementation, ZNE protocol, baselines
 ├── results/           # Experimental data from IBM Quantum (6 runs)
 │   └── figures/       # Paper figures
-├── notebooks/         # Jupyter notebooks for analysis
 └── paper/             # Manuscript and supplementary materials
 ```
 
