@@ -71,7 +71,7 @@ CLASSICAL_BUDGET = 2.0  # Time budget for Simulated Annealing (seconds)
 N_BOOTSTRAP = 100     # Bootstrap resamples for confidence intervals
 
 # Data path (modify according to your local setup)
-DATA_PATH = "E:/PROJETOS/IC_LAURIANE/data/"
+DATA_PATH = "/////"
 
 # ============================================================================
 # DATA LOADING
