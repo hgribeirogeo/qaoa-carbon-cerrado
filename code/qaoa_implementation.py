@@ -568,9 +568,25 @@ print(f"   Simulated Annealing: {sa_score:.4f}")
 # QAOA + ZNE ON IBM QUANTUM HARDWARE
 # ============================================================================
 print(f"\n🔐 Connecting to IBM Quantum...")
-service = QiskitRuntimeService()
+
+try:
+    # Tenta carregar as credenciais salvas no computador local
+    service = QiskitRuntimeService()
+except Exception:
+    # Se falhar (usuário novo rodando o script), exibe mensagem de ajuda e para
+    print("\n⚠️  ERRO CRÍTICO: Nenhuma conta IBM Quantum configurada!")
+    print("   Para reproduzir estes resultados no hardware real, você precisa salvar seu token.")
+    print("   Instruções:")
+    print("   1. Obtenha seu token em: https://quantum.ibm.com/")
+    print("   2. Execute o seguinte comando python uma única vez:")
+    print("      from qiskit_ibm_runtime import QiskitRuntimeService")
+    print("      QiskitRuntimeService.save_account(channel='ibm_quantum', token='SEU_TOKEN_AQUI')")
+    print("-" * 80)
+    raise RuntimeError("Credenciais IBM Quantum necessárias para execução.")
+
+# Seleciona o backend real menos ocupado com >90 qubits (ex: ibm_brisbane, ibm_kyoto)
 backend = service.least_busy(operational=True, simulator=False, min_num_qubits=90)
-print(f"   Backend: {backend.name}")
+print(f"   Backend selecionado: {backend.name}")
 
 # Transpiler for hardware-specific optimization
 pm = generate_preset_pass_manager(optimization_level=3, backend=backend)
@@ -632,30 +648,37 @@ for nf in noise_factors:
     print(f"depth={qc_t.depth()}", end=" ", flush=True)
     
     # Execute on quantum hardware
-    job = sampler.run([qc_t])
-    result = job.result()
-    
-    # Extract measurement counts
-    data_bin = result[0].data
-    counts = None
-    if hasattr(data_bin, 'c'): 
-        counts = data_bin.c.get_counts()
-    else:
-        for attr in dir(data_bin):
-            if not attr.startswith('_'):
-                obj = getattr(data_bin, attr)
-                if hasattr(obj, 'get_counts'): 
-                    counts = obj.get_counts()
-                    break
-    
-    raw_counts_all[nf] = counts
-    res = analyze_results_detailed(counts, N_TEST, K_TEST, df_sub, 
-                                   adj_sub, bio_sub, soc_sub, weights)
-    res['noise_factor'] = nf
-    res['depth'] = qc_t.depth()
-    zne_results.append(res)
-    
-    print(f"best={res['best_score']:.4f}, valid={res['valid_pct']:.1f}%, unique={res['unique_valid']}")
+    try:
+        job = sampler.run([qc_t])
+        result = job.result()
+        
+        # Extract measurement counts
+        data_bin = result[0].data
+        counts = None
+        if hasattr(data_bin, 'c'): 
+            counts = data_bin.c.get_counts()
+        else:
+            for attr in dir(data_bin):
+                if not attr.startswith('_'):
+                    obj = getattr(data_bin, attr)
+                    if hasattr(obj, 'get_counts'): 
+                        counts = obj.get_counts()
+                        break
+        
+        if counts:
+            raw_counts_all[nf] = counts
+            res = analyze_results_detailed(counts, N_TEST, K_TEST, df_sub, 
+                                           adj_sub, bio_sub, soc_sub, weights)
+            res['noise_factor'] = nf
+            res['depth'] = qc_t.depth()
+            zne_results.append(res)
+            
+            print(f"best={res['best_score']:.4f}, valid={res['valid_pct']:.1f}%, unique={res['unique_valid']}")
+        else:
+            print("Error: Could not extract counts from job result.")
+            
+    except Exception as e:
+        print(f"\n   ⚠️ Job failed for λ={nf}: {str(e)}")
 
 # ============================================================================
 # ZNE EXTRAPOLATION
