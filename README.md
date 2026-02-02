@@ -45,7 +45,7 @@ python code/zne_analysis.py
 ## 📁 Repository Structure
 ```
 ├── data/              # Municipal scores, adjacency matrices, synergy data
-├── code/              # QAOA implementation, ZNE protocol, baselines
+├── code/              # QAOA implementation, ZNE protocol, baselines, figures, zne analisys
 ├── results/           # Experimental data from IBM Quantum (6 runs)
 │   └── figures/       # Paper figures
 └── paper/             # Manuscript and supplementary materials
