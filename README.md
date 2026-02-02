@@ -16,7 +16,7 @@
 ## 📊 Key Results
 
 - **100% success rate** across 7 independent runs on IBM Quantum hardware
-- **31.6% average improvement** over classical greedy baseline (p < 0.0008)
+- **29% average improvement** over classical greedy baseline (p < 0.0049)
 - **Problem scale:** n=88 municipalities, k=28 selection, ~10²² combinations
 - **Hardware:** ibm_torino (Heron r1, 133q), ibm_fez (Heron r2, 156q)
 - **Execution period:** January 17 – February 2, 2026
@@ -60,7 +60,7 @@ python code/zne_analysis.py
 | Greedy              | 44.42          | 100.0%    | baseline     |
 | Simulated Annealing | 42.23 ± 0.51   | 95.1%     | 0/7          |
 | QAOA (raw)          | 43.55 ± 1.58   | 98.4%     | 2/7          |
-| **QAOA + ZNE**      | **58.47 ± 6.54** | **131.6%** | **7/7**    |
+| **QAOA + ZNE**      | **57.30 ± 7.86** | **129%** | **7/7**    |
 
 **Solution consistency:** 92.4% average overlap between runs
 **Temporal Stability:** Run 7 confirmed consistent performance after a 13-day hardware calibration interval.
