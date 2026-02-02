@@ -15,11 +15,11 @@
 
 ## 📊 Key Results
 
-- **100% success rate** across 6 independent runs on IBM Quantum hardware
-- **29.9% average improvement** over classical greedy baseline (p < 0.02)
+- **100% success rate** across 7 independent runs on IBM Quantum hardware
+- **31.6% average improvement** over classical greedy baseline (p < 0.0008)
 - **Problem scale:** n=88 municipalities, k=28 selection, ~10²² combinations
 - **Hardware:** ibm_torino (Heron r1, 133q), ibm_fez (Heron r2, 156q)
-- **Execution period:** January 17-20, 2026
+- **Execution period:** January 17 – February 2, 2026
 
 ---
 
@@ -36,6 +36,8 @@ pip install -r requirements.txt
 ```python
 # Coming soon
 python code/qaoa_implementation.py
+python code/generate_figures.py
+python code/zne_analysis.py
 ```
 
 ---
@@ -56,11 +58,12 @@ python code/qaoa_implementation.py
 | Method              | Score          | vs Greedy | Success Rate |
 |---------------------|----------------|-----------|--------------|
 | Greedy              | 44.42          | 100.0%    | baseline     |
-| Simulated Annealing | 42.23 ± 0.51   | 95.1%     | 0/6          |
-| QAOA (raw)          | 43.71 ± 1.58   | 98.4%     | 2/6          |
-| **QAOA + ZNE**      | **57.71 ± 7.02** | **129.9%** | **6/6**    |
+| Simulated Annealing | 42.23 ± 0.51   | 95.1%     | 0/7          |
+| QAOA (raw)          | 43.55 ± 1.58   | 98.4%     | 2/7          |
+| **QAOA + ZNE**      | **58.47 ± 6.54** | **131.6%** | **7/7**    |
 
-**Solution consistency:** 93.5% average overlap between runs
+**Solution consistency:** 92.4% average overlap between runs
+**Temporal Stability:** Run 7 confirmed consistent performance after a 13-day hardware calibration interval.
 
 ---
 
@@ -75,8 +78,8 @@ python code/qaoa_implementation.py
 ### QAOA Implementation
 - **Depth:** p=1 (~250 native gates)
 - **Warm-start:** initialization from greedy solution
-- **Hybrid mixer:** standard + XY-mixer (cardinality-preserving)
-- **Valid solution rate:** 15.7%
+- **Mixer:** Standard transverse field with quadratic penalty for cardinality.
+- **Valid solution rate:** 15.9%
 
 ### Zero Noise Extrapolation
 - **Gate folding** on 2-qubit gates (CNOT, RZZ)
@@ -104,7 +107,7 @@ python code/qaoa_implementation.py
 ### Output Data (`results/`)
 
 - **Complete experimental results:**
-  - 6 independent runs (3× ibm_torino, 3× ibm_fez)
+  - 7 independent runs (3× ibm_torino, 4× ibm_fez)
   - Raw measurements (λ=1) + amplified circuits (λ=2,3)
   - ZNE extrapolations (linear, quadratic, Richardson)
   - Bootstrap confidence intervals
