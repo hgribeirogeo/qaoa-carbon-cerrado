@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Quantum Journal](https://img.shields.io/badge/Quantum-Submitted-blue.svg)](https://quantum-journal.org)
 
-**Quantum Approximate Optimization Algorithm (QAOA) with Zero Noise Extrapolation (ZNE) applied to carbon credit portfolio optimization in the Brazilian Cerrado biome.**
+**Empirical Evaluation of QAOA with Zero Noise Extrapolation on NISQ Hardware for Carbon Credit Portfolio Optimization in the Brazilian Cerrado.**
 
 🔗 **Paper:** Submitted to *Quantum Journal* | arXiv: **PENDING**  
 👤 **Author:** Hugo José Ribeiro (Federal University of Goiás, Brazil)  
