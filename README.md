@@ -165,7 +165,3 @@ School of Civil and Environmental Engineering
 Email: hugoppgema@ufg.br
 
 GitHub: @hgribeirogeo
-
----
-
-**Last updated:** January 2026
