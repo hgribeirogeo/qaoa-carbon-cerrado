@@ -138,8 +138,8 @@ If you use this repository, please cite:
 
 ```bibtex
 @article{Ribeiro2026QAOA,
-  title={QAOA with Zero Noise Extrapolation Outperforms Classical Heuristics
-         for Carbon Credit Portfolio Optimization in Brazilian Cerrado},
+  title={Empirical Evaluation of QAOA with Zero Noise Extrapolation on NISQ Hardware
+                   for Carbon Credit Portfolio Optimization in the Brazilian Cerrado},
   author={Ribeiro, Hugo Jos{\'e}},
   journal={Quantum},
   year={2026},
