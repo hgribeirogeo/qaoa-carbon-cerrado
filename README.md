@@ -41,8 +41,9 @@ pip install -r requirements.txt
 ```bash
 # Scripts will be finalized after publication
 python code/qaoa_implementation.py
-python code/zne_analysis.py
-python code/generate_figures.py
+python code/check_article_metrics.py
+python code/figure_2.py
+python code/figure_3.py
 ```
 
 ---
@@ -51,7 +52,7 @@ python code/generate_figures.py
 
 ```
 ├── data/              # Municipal scores, adjacency matrices, synergy data
-├── code/              # QAOA implementation, ZNE protocol, baselines, figures
+├── code/              # QAOA implementation, check metrics, figures
 ├── results/           # Experimental data from IBM Quantum (7 runs)
 │   ├── resultados_consolidados_v7.json
 │   └── figures/       # Figures used in the paper
