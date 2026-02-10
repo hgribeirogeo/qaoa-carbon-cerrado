@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "title": "QAOA + ZNE for Carbon Credit Portfolio Optimization",
+    "authors": "Hugo et al.",
+    "date": "2026-02-02",
+    "problem_size": {
+      "n_candidates": 88,
+      "k_selections": 28
+    },
+    "quantum_config": {
+      "shots": 8192,
+      "noise_factors": [
+        1,
+        2,
+        3
+      ],
+      "optimization_level": 3
+    },
+    "n_executions": 7
+  },
+  "classical_baseline": {
+    "greedy": {
+      "score": 44.42,
+      "description": "Deterministic greedy selection"
+    },
+    "simulated_annealing": {
+      "mean": 41.96,
+      "std": 0.51,
+      "budget_seconds": 2.0
+    }
+  },
+  "executions": [
+    {
+      "run": 1,
+      "backend": "ibm_torino",
+      "qaoa_raw": {
+        "score": 44.42,
+        "vs_greedy_pct": 100.0,
+        "valid_pct": 13.2
+      },
+      "qaoa_zne": {
+        "score": 58.69,
+        "vs_greedy_pct": 132.1
+      },
+      "overlap_with_greedy": null
+    },
+    {
+      "run": 2,
+      "backend": "ibm_torino",
+      "qaoa_raw": {
+        "score": 42.47,
+        "vs_greedy_pct": 95.6,
+        "valid_pct": 14.8
+      },
+      "qaoa_zne": {
+        "score": 52.7,
+        "vs_greedy_pct": 118.6
+      },
+      "overlap_with_greedy": 0.893
+    },
+    {
+      "run": 3,
+      "backend": "ibm_torino",
+      "qaoa_raw": {
+        "score": 41.51,
+        "vs_greedy_pct": 93.4,
+        "valid_pct": 14.5
+      },
+      "qaoa_zne": {
+        "score": 47.84,
+        "vs_greedy_pct": 107.7
+      },
+      "overlap_with_greedy": 0.893
+    },
+    {
+      "run": 4,
+      "backend": "ibm_fez",
+      "qaoa_raw": {
+        "score": 45.29,
+        "vs_greedy_pct": 102.0,
+        "valid_pct": 17.6
+      },
+      "qaoa_zne": {
+        "score": 69.64,
+        "vs_greedy_pct": 156.8
+      },
+      "overlap_with_greedy": 0.964
+    },
+    {
+      "run": 5,
+      "backend": "ibm_fez",
+      "qaoa_raw": {
+        "score": 45.53,
+        "vs_greedy_pct": 102.5,
+        "valid_pct": 18.7
+      },
+      "qaoa_zne": {
+        "score": 58.68,
+        "vs_greedy_pct": 132.1
+      },
+      "overlap_with_greedy": 0.964
+    },
+    {
+      "run": 6,
+      "backend": "ibm_fez",
+      "qaoa_raw": {
+        "score": 43.04,
+        "vs_greedy_pct": 96.9,
+        "valid_pct": 15.2
+      },
+      "qaoa_zne": {
+        "score": 58.72,
+        "vs_greedy_pct": 132.2
+      },
+      "overlap_with_greedy": 0.964
+    },
+    {
+      "run": 7,
+      "backend": "ibm_fez",
+      "qaoa_raw": {
+        "score": 42.61,
+        "vs_greedy_pct": 95.9,
+        "valid_pct": 17.3
+      },
+      "qaoa_zne": {
+        "score": 63.05,
+        "vs_greedy_pct": 141.9
+      },
+      "overlap_with_greedy": 0.867
+    }
+  ],
+  "aggregated_statistics": {
+    "qaoa_raw": {
+      "mean": 43.55,
+      "std": 1.54,
+      "median": 43.04,
+      "min": 41.51,
+      "max": 45.53,
+      "cv_pct": 3.5,
+      "vs_greedy_mean_pct": 98.0,
+      "success_rate": "2/7 (29%)"
+    },
+    "qaoa_zne": {
+      "mean": 58.47,
+      "std": 6.98,
+      "median": 58.69,
+      "min": 47.84,
+      "max": 69.64,
+      "cv_pct": 11.9,
+      "vs_greedy_mean_pct": 131.6,
+      "success_rate": "7/7 (100%)"
+    },
+    "valid_solutions_pct": {
+      "mean": 15.9,
+      "std": 2.0,
+      "min": 13.2,
+      "max": 18.7
+    },
+    "overlap_with_greedy": {
+      "mean": 0.924,
+      "std": 0.045,
+      "min": 0.867,
+      "max": 0.964,
+      "n": 6
+    }
+  },
+  "consistency_metrics": {
+    "zne_exceeds_greedy": {
+      "count": "7/7",
+      "rate": 1.0,
+      "interpretation": "Consistent quantum utility (ZNE > Greedy in all runs)"
+    },
+    "raw_at_least_95pct_greedy": {
+      "count": "6/7",
+      "rate": 0.857,
+      "interpretation": "Raw QAOA remains close to Greedy baseline"
+    },
+    "raw_exceeds_greedy": {
+      "count": "2/7",
+      "rate": 0.286,
+      "interpretation": "Occasional raw outperformance of Greedy"
+    }
+  },
+  "zne_extrapolation_methods": {
+    "linear": {
+      "mean_score": 49.12,
+      "std": 1.82,
+      "r2_mean": 0.94,
+      "r2_std": 0.09,
+      "ci95_bootstrap": [
+        46.13,
+        52.14
+      ]
+    },
+    "quadratic": {
+      "mean_score": 58.47,
+      "std": 6.98,
+      "r2_note": "Undefined (exact fit through three points; zero residual degrees of freedom)",
+      "ci95_bootstrap": [
+        49.48,
+        71.53
+      ]
+    },
+    "richardson": {
+      "mean_score": 54.56,
+      "std": 9.12,
+      "r2_note": "Not applicable (algebraic combination, not a regression)",
+      "ci95_bootstrap": [
+        43.86,
+        64.87
+      ]
+    }
+  },
+  "key_findings": [
+    "QAOA+ZNE exceeded Greedy in 100% of executions (7/7)",
+    "Mean improvement over Greedy: 31.6% (range: 7.7% to 56.8%)",
+    "Even worst-case ZNE (47.84) exceeded Greedy by 7.7%",
+    "High solution overlap (mean Jaccard 92.4% across n=6 runs with telemetry) indicates convergence to a stable solution region",
+    "Valid solution rate averaged 15.9%, reflecting constraint violations under hardware noise and ZNE noise amplification",
+    "Results reproducible across two IBM backends (ibm_torino, ibm_fez) over a 17-day window"
+  ],
+  "limitations": [
+    "ZNE extrapolates expectation values (scores) and does not directly output a noise-free bitstring solution",
+    "Variability (CV≈11.9%) reflects NISQ hardware noise and uncertainty propagation through extrapolation",
+    "Overlap/Jaccard telemetry was unavailable for Run 1; overlap statistics use n=6 runs",
+    "Quadratic extrapolation with three points yields an exact fit; R² is undefined for quadratic and not applicable to Richardson"
+  ]
+}
