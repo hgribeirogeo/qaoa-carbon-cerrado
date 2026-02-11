@@ -1,14 +1,13 @@
 # QAOA with Zero Noise Extrapolation for Carbon Credit Portfolio Optimization
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18418053.svg)](https://doi.org/10.5281/zenodo.18418053)
-[![arXiv](https://img.shields.io/badge/https://arxiv.org/abs/2602.09047.svg)](https://arxiv.org/abs/2602.09047)
+[![arXiv](https://img.shields.io/badge/arXiv-2602.09047-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.09047)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Quantum Journal](https://img.shields.io/badge/Quantum-Submitted-blue.svg)](https://quantum-journal.org)
 
+[[2602.09047] Empirical Evaluation of QAOA with Zero Noise Extrapolation on NISQ Hardware for Carbon Credit Portfolio Optimization in the Brazilian Cerrado](https://arxiv.org/abs/2602.09047)
 
-**Empirical Evaluation of QAOA with Zero Noise Extrapolation on NISQ Hardware for Carbon Credit Portfolio Optimization in the Brazilian Cerrado.**
-
-🔗 **Paper:** Submitted to *Quantum Journal* | arXiv: **PENDING**  
+🔗 **Paper:** Submitted to *Quantum Journal* | arXiv: (https://doi.org/10.5281/zenodo.18418053) 
 👤 **Author:** Hugo José Ribeiro (Federal University of Goiás, Brazil)  
 📧 **Contact:** hugoppgema@ufg.br  
 
