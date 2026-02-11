@@ -7,7 +7,7 @@
 
 [[2602.09047] Empirical Evaluation of QAOA with Zero Noise Extrapolation on NISQ Hardware for Carbon Credit Portfolio Optimization in the Brazilian Cerrado](https://arxiv.org/abs/2602.09047)
 
-🔗 **Paper:** Submitted to *Quantum Journal* | arXiv: (https://doi.org/10.5281/zenodo.18418053) 
+🔗 **Paper:** Submitted to *Quantum Journal* | arXiv: ([https://doi.org/10.5281/zenodo.18418053](https://arxiv.org/abs/2602.09047)) 
 👤 **Author:** Hugo José Ribeiro (Federal University of Goiás, Brazil)  
 📧 **Contact:** hugoppgema@ufg.br  
 
