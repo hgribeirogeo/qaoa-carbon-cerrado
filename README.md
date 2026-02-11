@@ -145,7 +145,7 @@ If you use this repository, please cite:
   year={2026},
   note={Submitted},
   archivePrefix={arXiv},
-  eprint={PENDING}
+  eprint={https://arxiv.org/abs/2602.09047}
 }
 ```
 
